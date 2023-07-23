@@ -1,0 +1,102 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login-to-the-applicaiton;login-with-valid-date",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with valid date",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user Naviagte to applicaiton",
+            "match": {
+              "location": "src/test/steps/LoginPage.ts:2"
+            },
+            "result": {
+              "status": "pending",
+              "duration": 6875832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User click login button",
+            "match": {
+              "location": "src/test/steps/LoginPage.ts:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User enter valid user name  \"Victor\"",
+            "match": {
+              "location": "src/test/steps/LoginPage.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enter valid password \"Jeya\"",
+            "match": {
+              "location": "src/test/steps/LoginPage.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user click on the login button",
+            "match": {
+              "location": "src/test/steps/LoginPage.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Login should success",
+            "match": {
+              "location": "src/test/steps/LoginPage.ts:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login-to-the-applicaiton",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Login to the applicaiton",
+    "tags": [],
+    "uri": "src/test/features/login.feature"
+  }
+]
