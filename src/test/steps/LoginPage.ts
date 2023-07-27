@@ -1,44 +1,31 @@
-import {Given, When, Then} from "@cucumber/cucumber"
-import { chromium, expect, test } from "@playwright/test";
-let browser;
-let page;
-         Given('user Naviagte to applicaiton', async function () {
-            browser = await chromium.launch({
-                headless: false,
-              });
-              const context = await browser.newContext({
-                // recordVideo:{
-                //   dir: "./video/"
-                // }
-              });
-              page = await context.newPage();
-              await page.goto("https://www.lambdatest.com/"), {timeout: 60000};
-              page.close();
-           
-         });       
-       
-         Given('User click login button', async function () {
-         
-         });
-       
+import { Given, When, Then } from "@cucumber/cucumber"
+import { chromium, Page } from "@playwright/test"
+import { PageFixture } from "../../Hooks/PageFixture";
 
-         Given('User enter valid user name  {string}', async function (string) {
-          
-         });
-       
 
-       
-         Given('User enter valid password {string}', async function (string) {
-           
-         });
-       
-  
-       
-         When('user click on the login button', async function () {
+Given('go to login page', async function () {
+  await PageFixture.page.goto("URL");
+});
 
-         });
 
-       
-         Then('Login should success', async function () {
+Given('User enter valid user name  {string}', async function (Username) {
+  await PageFixture.page.locator('#email').type(Username)
 
-         });
+});
+
+
+Given('User enter valid password {string}', async function (Password) {
+  await PageFixture.page.locator('#password').fill(Password)
+
+});
+
+
+When('user click on the login button', async function () {
+  await PageFixture.page.locator('button[type="button"]').click()
+
+});
+
+
+Then('Login should success', async function () {
+  await PageFixture.page.close()
+});

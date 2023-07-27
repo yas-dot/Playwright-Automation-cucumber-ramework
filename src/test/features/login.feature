@@ -1,11 +1,9 @@
 Feature: User Login to the applicaiton
-    Background:
-      Given user Naviagte to applicaiton
-      And User click login button
     
     Scenario: Login with valid date
-        And User enter valid user name  "Victor"
-        And User enter valid password "Jeya"
+        Given go to login page
+        And User enter valid user name  "Username"
+        And User enter valid password "Password"
         When user click on the login button
         Then Login should success
 

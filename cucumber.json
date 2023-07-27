@@ -10,7 +10,8 @@
         "publishQuiet": true,
         "dryRun": false,
         "require": [
-            "src/test/steps/*.ts"
+            "src/test/steps/*.ts",
+            "src/Hooks/hooks.ts"
         ],
         "requireModule": [
             "ts-node/register"
