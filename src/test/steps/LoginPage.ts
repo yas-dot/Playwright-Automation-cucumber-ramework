@@ -21,10 +21,8 @@ When('user click on the login button', async function () {
 
 });
 Then('Login should success', async function () {
-  const orgManagementElement = await PageFixture.page.locator('//h1[text()="Management"]');
+  const orgManagementElement = await PageFixture.page.locator('//h1[text()="Organization Management"]');
   const elementText = await orgManagementElement.innerText();
-  expect(elementText).toBe('Management');
-  const isVisible =  await orgManagementElement.isVisible();
-  console.log(isVisible,elementText);
+  expect(elementText).toBe('Organization Management');
 });
 
