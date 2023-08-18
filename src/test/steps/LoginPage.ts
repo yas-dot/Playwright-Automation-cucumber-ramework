@@ -4,7 +4,7 @@ import { PageFixture } from "../../Hooks/PageFixture";
 
 
 Given('go to login page', async function () {
-  await PageFixture.page.goto("URL");
+  await PageFixture.page.goto("URL1");
 });
 Given('User enter valid user name  {string}', async function (Username) {
   await PageFixture.page.locator('#email').type(Username)
